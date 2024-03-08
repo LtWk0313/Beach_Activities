@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Rouge, River, Beach, Park, Trail, Water, Camp, Kayak, Biking ">
+    <meta name="description" content="Beach in Rouge Park that you can camp, bike and kayak in the river">
+    <title>Rouge Beach| The Secret Place to visit !</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Nothing+You+Could+Do&family=Rampart+One&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="sunset_portrait">
+        <video id="sunset" controls autoplay loop volume="1">
+        <source src="images/sunset.MOV" type="video/mp4"> </div>
+    </div>
+    <div id="sunsetstraightbox">
+        <a><video id="sunset_straight_1" autoplay loop volume="1">
+        <source src="images/sunset_straight.MOV" type="video/mp4"> </a>
+        <a><video id="sunset_straight_2" autoplay loop volume="1">
+        <source src="images/sunset_straight.MOV" type="video/mp4"> </a>
+    </div>
+    </div>
+
+    <div class="container">
+
+        <header>
+
+            <div id="logoBox">
+                <img src="images/beachlogo.jpg" width="200vw" alt="Nasa Logo" /> 
+            </div>
+
+            <h1 class="maintitle">Rouge Beach<br>
+                Wonderful Place to Visit</h1>
+
+            <nav>
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle"/>
+                <div id="menu">
+                    <a href="#container">Introduction</a>
+                    <a href="#sunsetbox">Highlights</a>
+                    <a href="#activitytitle">Activities</a>
+                    <a href="#access">How-to-Go</a>
+                    <a href="#comments">Comments</a>
+                </div>
+            </nav>
+
+           
+        </header>
+    
+    </div>
+    
+    <h1 id="highlightstitle">Highlights</h1>
+    <div id="sunsetbox">
+        <div id="waterday"><div id="kayakimg"><img src="images/Kayaking.png" height="200px"></div>
+        <div class="button" id="btn3"><br><br><br>click !</div>
+        <div id="SUPimg"><img src="images/SUP.png" height="150px"></div></div>
+        <div id="dayname" ><h2>Water Sports Day 2024 @ 16 JUN </h2></div>
+        <div id="daydetails"><h4>Play kayaking and SUP Paddle boarding together organized by Pickering Rouge Kayaking Club</h4></div>
+    </div>
+
+    <h1 id="activitytitle">Activities to Do Nearby</h1> 
+    <div id="activities">
+        <div class="activity" id="activity_01">
+            <h3>Biking</h3>
+            <img src="images/bike.png">
+            <p>One of the best sections of the Waterfront Trail, this route traverses the east side of Toronto, from the far end of Scarborough and into Pickering. <br>
+                This 9 km scenic, paved Park trail has serene views of Lake Ontario and crosses over both Highland Creek and the Rouge River. </p></td>
+            <details><summary>Learn More</summary>
+                The landscape is ever-changing, and although the elevation is mainly flat at the lake, it does rise over the bluffs and while crossing bridges. Well-marked, it is for good reason a popular and busy route.
+                <ul>
+                <li>Length – 9 km (one way)  80% park path   20% road crossings, detours</li>   
+                <li>Elevation – flat along waters edge, a few short hills over bluffs, bridges </li>
+                <li>Terrain – paved, some gravel and sand, bridges </li>
+                <li>Skill – all levels </li>
+                <li>Facilities – parking, toilets at Rouge River, snack bar, benches, picnic tables, rain shelter </li>
+            </details>
+            <button><a href="https://bikesharetoronto.com">Borrow a Bike !</a></button>
+        </div>
+        <div class="activity" id="activity_02" >
+            <h3>Kayaking</h3></td>
+            <img src="images/kayaking.jpeg.webp"></td>
+            <p>Discover Rouge River kayaking and the soft sandy beaches of the Rouge River. Multiple non-guided kayak, paddleboard and canoeing trips. 
+                There are several great swimming spots (most beaches are public land), and you can bring your lunch and have a picnic on the shore of the river. </p>
+                <details><summary>Learn More</summary>
+                <p>The Rouge river is CALM and most parts are very shallow. Our 24 km (full day), 12 km (half day) or 6km (2hr) section of river is in a rural setting.
+                A few clubs like Pickering Rouge Kayaking Club includes a canoe, kayak, or paddleboard (SUP) rental and up river transport.Staff will provide you with the equipment, help you launch and give you some basic instructions.</p></details>
+            <button><a href="https://pickeringrouge.ca">Check the Pickering <br> Rouge Kayaking Club</a></button>
+        </div>
+        <div class="activity" id="activity_03">
+            <h3>Camping</h3>
+            <img src="images/camp.JPG">
+            <p> Glen Rouge Campground,located at 7540 Kingston Road, this is Toronto’s only campground. Here you will have access to hiking trails and sandy beaches, children’s playground, showers, washrooms and laundry facilities. BBQ and fire pits are also available. 
+                Leashed dogs are permitted.</p>
+                <details><summary>Learn More</summary>
+                <p>The Campground is staffed 24 hours a day, 7 days a week during the season. Camping season runs from May to October. Reservations are accepted as early as January</p></details>
+            <button><a href="https://camping.trca.ca">Check Available Dates !</a></button></td>
+        </div>
+    </div>
+
+    <h1>How to Go ?</h1>
+    <div id="access">
+          <div class="access" id="map">
+            <h3>Map</h3>
+            <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=rouge%20hill%20beach+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe>
+          </div>
+          <div class="access" id="train">
+            <h3>Public Transport</h3>   
+            <img src="images/train.png">
+            <h3>Go Train</h3>
+            <p>Access through Rouge Hill Go Station on the Lakeshore East Go Train Line. </p>
+            <h3>TTC Bus</h3>
+            <p>Access through TTC Route 38, 85, 54. </p>
+          </div>
+          <div class="access" id="parklot">
+            <h3>Parking Lots</h3>
+            <img src="images/parklot.png">
+            <p> Free customer parking is available at this station. Station Parking Numbers of Main Lot: 319 and North Lot: 534.
+                Reserved and carpool parking are available at this station.</p>
+          </div>
+
+    </div>
+
+    <h1>Comments</h1>
+    <div id="comments">
+        <!--<table>
+        <tbody>
+            <tr>
+              <td>BinKris</td>
+              <td>Jul 2019 • Family</td>
+              <td>Hidden gem</td>
+              <td><p>Didn’t expect the calmness of it. If you want to spend time with family in a quiet but wonderful beach, this is the place to be in. Loved it.</p></td>
+           </tr>
+           <tr>
+             <td>Dynamite2805</td>
+             <td>Aug 2017 • Friends</td>
+             <td>Beautiful Park & Beach</td> 
+             <td><p>As you enter, you can see the marsh boardwalk and a walking bridge to the left of the park. People were busy fishing, walking, biking and swimming as well. Family & pet friendly place too.</p></td>
+           </tr>
+           <tr>
+             <td>Sonam</td>
+             <td>Sandy beach 🏖 & clean water</td>
+             <td>Jul 2018 • Couples</td>
+             <td><p>We always go to Rouge beach once a week sometimes twice a week too. It has a clean water on shore side with sandy beach & perfect spot to view entire Lake Ontario. There’s trails on the side - Rouge National Urban Park. Fishing, kayaking, boating on the Rouge river. Free parking, washroom on the site. GO station & TTC bus near by(Lawrence East).</p></td>
+           </tr>
+        </tbody>
+        </table> -->
+        <div class="comment" id="comments_04">
+            <h4>Leave Your Comments !</h4>
+            <form  method="POST">
+            <label for="User Name">User Name:</label>
+            <input type="text" id="UserName" name="textData" placeholder="Name" required>
+            <br>
+            <label>Date & Group:</label>
+            <input type="text" id="DateGroup" name="textData" placeholder="Date & Group">
+            <br>
+            <label>Header:</label>
+            <input type="text" id="Header" name="textData" placeholder="Header" required>
+            <br>
+            <label for="imageData">Image Attachment:</label>
+            <input type="file" id="imageData" name="imageData" accept="image/*">
+            <br>
+            <label>Comments:</label>
+            <input type="text" id="CommentBox" name="textData" placeholder="Comments" required>
+            <br><br>
+            <button type="submit"><a>Submit</a></button>
+            </form>
+        </div>
+        <div class="comment" id="comments_01">
+            <h4>BinKris</h4>
+            <h4>Jul 2019 • Family</h4>
+            <h4>Hidden gem</h4>
+            <img src="images/comment_01.png">
+            <p>Didn’t expect the calmness of it. If you want to spend time with family in a quiet but wonderful beach, this is the place to be in. Loved it.</p>
+        </div>
+        <div class="comment" id="comments_02">
+            <h4>Dynamite2805</h4>
+            <h4>Aug 2017 • Friends</h4>
+            <h4>Beautiful Park & Beach</h4> 
+            <img src="images/comment_02.jpg">
+            <p>As you enter, you can see the marsh boardwalk and a walking bridge to the left of the park. People were busy fishing, walking, biking and swimming as well. Family & pet friendly place too.</p>
+        </div>
+        <div class="comment" id="comments_03">
+            <h4>Sonam</h4>
+            <h4>Jul 2018 • Couples</h4>
+            <h4>Sandy beach 🏖 & clean water</h4>
+            <img src="images/comment_03.jpg">
+            <p>We always go to Rouge beach once a week sometimes twice a week too. It has a clean water on shore side with sandy beach & perfect spot to view entire Lake Ontario. There’s trails on the side - Rouge National Urban Park. Fishing, kayaking, boating on the Rouge river. Free parking, washroom on the site. GO station & TTC bus near by(Lawrence East).</p>
+        </div>
+    </div>
+
+    <audio controls autoplay loop>
+        <source src="audio/Wendy_Wander.mp3" type="audio/mp3">
+     </audio>
+<footer>
+   <div id="copyright">
+      (c) Copyright 2024 by Rouge Beach Authority 
+   </div>
+   <div id="socialicons">
+       <a href="https://www.facebook.com/RougeNUP/"><img src="images/fb_icon.png"></a>
+       <a href="https://www.instagram.com/explore/locations/223250218533412/rouge-national-urban-park-rouge-beach-and-marsh-area/"><img src="images/ig_icon.png"></a>
+       <a href="https://www.youtube.com/watch?v=5fHNWRMoj40"><img src="images/youtube_icon.png"></a>
+   </div>
+</footer>
+</body>
+</html>

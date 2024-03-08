@@ -1,0 +1,438 @@
+
+*{
+    box-sizing: border-box;
+    background-color:transparent;
+    color: white;
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 400;
+    font-style: normal;
+    z-index:1;
+}
+
+header{
+    opacity:0;
+}
+
+body{
+    background-color:#fff3e3;
+}
+
+label {
+    font-size: 26px;
+    display: none;
+	text-align: center;
+}
+
+#toggle {
+    display: none;
+}
+
+nav{
+    text-align: center;
+}
+
+#menu>a{
+    font-size:1.5rem;
+    margin-right:100px;
+}
+
+h1{
+    text-align: center;
+    font-size:40px;
+}
+
+h3{
+    font-size:25px;
+}
+
+/* Tablets devices (601px and up) background setup   */
+@media only screen and (max-width: 600px) {
+nav, #menu {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    border: 2px solid #fff;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+#sunset{
+    display:none;
+}
+
+
+#sunset_straight_1{
+    width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+#sunset_straight_2{
+    display:none;
+}
+
+#menu {
+    border: 0;
+}
+
+nav a {
+    display: none;
+    transition: all 0.5s;
+    font-size: 18px;
+    padding: 10px 30px;
+}
+
+nav a:hover {
+    transform: translateY(3px);
+    color: #222;
+    background: #fff3e3;
+}
+
+input {
+    display: none;
+}
+label {
+    display: block;
+    cursor: pointer;
+}
+
+#toggle:checked + #menu {
+    display: flex;
+}
+
+#toggle:checked + #menu a {
+    display: block;
+    position: sticky; 
+}
+
+#kayakimg{
+    position: absolute;
+    transform: scale(60%) translateX(-400px) translateY(95px);
+}
+
+#SUPimg{
+    position: absolute;
+    transform: scale(60%) translateX(250px) translateY(95px);
+}
+
+footer {
+    width: 90%;
+    color:white;
+}
+
+#copyright{
+    width: 300px;
+    color:white;
+}
+
+}
+
+/* Tablets devices (601px and up) background setup   */
+@media only screen and (min-width: 601px) and (max-width: 1439px){
+    body {
+        min-width: 601px;
+    }
+
+    #sunset{
+        display:none;
+    }
+    
+    nav a:hover {
+        transform: translateY(3px);
+        color: #222;
+        background: #fff3e3;
+    }
+
+    #sunset_straight_1{
+        width:53%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+
+    #sunset_straight_2{
+        width:53%;
+        position: fixed;
+        top: 0;
+        margin-left: 50%;
+        z-index: -2;
+    }
+    
+    #kayakimg{
+        position: absolute;
+        transform: translateX(-300px) translateY(55px);
+    }
+    
+    #SUPimg{
+        position: absolute;
+        transform: translateX(220px) translateY(30px);
+    }
+
+    #menu a{
+        margin-right:10px;
+    }
+
+    #activity_02{
+        display:none;
+    }
+
+    #parklot{
+        display:none;
+    }
+
+    footer {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #copyright{
+        width: 500px;
+        color:orangered;
+        text-align:center;
+    }
+    
+    #socialicons{
+        width: 300px;
+        text-align:center;
+    }
+    
+    #socialicons img{
+        height: 2rem;
+        margin-right: 1rem;
+    }
+     
+    nav a{
+        margin-right: 5px;
+    }
+
+    }
+
+
+/* Large devices (laptops/desktops, 1440px and up) background setup */
+@media only screen and (min-width: 1440px) {
+
+    body {
+        min-width: 1440px;
+    }
+    
+    nav a:hover {
+        transform: translateY(3px);
+        color: #222;
+        background: #fff3e3;
+    }
+
+    #menu {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		border: transparent;
+		margin: 15px 0px;
+		padding: 20px 140px;
+	}
+
+	nav a {
+		transition: all 0.5s;
+	}
+
+	nav a:hover {
+		transform: translateY(5px);
+	}
+
+    #sunset{
+    width:100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: -2;
+    display:block;
+    }
+
+    #sunsetstraightbox{
+    height:0px;
+    width:0px;
+    position:relative;
+    display: none;
+    }
+
+    #sunset_straight{
+    height:0px;
+    width:0px;
+    }
+
+    #kayakimg{
+        position: absolute;
+        transform: translateX(-400px) translateY(55px);
+    }
+    
+    #SUPimg{
+        position: absolute;
+        transform: translateX(400px) translateY(30px);
+    }
+
+    footer {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        color: white;
+    }
+    #copyright{
+        text-align: left;
+        width: 400px;
+        color: white;
+    }
+    
+    #socialicons{
+        text-align: right;
+        width: 300px;
+    }
+}
+
+#highlightstitle{
+    margin-top: 200px;
+}
+
+#sunsetbox{
+    width:100%;
+    height:400px;
+    box-shadow: 10px 0 10px -10px #666,
+    -10px 0 10px -10px #666;
+    text-align:center;
+    border: 1px solid white;
+}
+
+#waterday{
+    width:90%;
+    height:200px;
+    text-align:center;
+    margin: 40px 40px 0px 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#btn3{
+    width: 200px;
+    height: 200px;
+    margin: 0 25px 0 0;
+    text-align: center;
+    border-radius: 50%;
+    background: #FFB845;
+    border: transparent;
+    color: white ;
+    font-size:25px;
+    transform: scale(50%);
+    position: relative;
+    animation: color-me-in 5s infinite ;
+}
+
+@keyframes color-me-in {
+    /* You could think of as "step 1" */
+    0% {
+      background: #F7E752;
+    }
+    25%{
+      background: linear-gradient(#F7E752,#F7E752,#F7E752,#FFB845,#FFB845);
+      transform: scale(60%);
+    }
+    /* You could think of as "step 2" */
+    50%{
+        background: linear-gradient(#F7E752,#F7E752,#F7E752,#FFB845, #FFB845, #F97698);
+      }
+    75% {
+        background: linear-gradient(#F7E752,#F7E752, #FFB845, #FFB845, #F97698, #F97698);
+    }
+    100%{
+        background: linear-gradient(#F7E752,#F7E752,#FFB845,#FFB845, #FFB845, #F97698  ,#712275);
+        transform: scale(70%);
+    }
+  }
+
+#dayname, #daydetails{
+    width:100%;
+}
+
+.maintitle {
+    position: relative;
+    margin: 15% auto 0 auto;
+    z-index: 1;
+    text-align:center;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+}
+
+nav{
+    margin-top: 3rem;
+}
+
+
+nav, #logoBox,footer, #activities, #comments, #access{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#activities > div, #comments> div, #access>div{
+   width: 300px;
+   padding: 1.5rem;
+   margin: 1.5rem;
+   text-align: center;
+   box-shadow: 10px 0 10px -10px #666,
+   -10px 0 10px -10px #666;
+}
+
+.activity img,.comment img, .access img{
+    width:250px;
+}
+
+.activity button, .comment button{
+    margin: 1.5rem;
+    width: 210px;
+    background-color: white;
+    height: 50px;
+}
+
+.activity a, .comment a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.comment input{
+    width: 210px;
+    margin-top:20px;
+}
+
+.comment form input::placeholder{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+#CommentBox{
+    height:160px;
+}
+
+#socialicons img{
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+audio {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+ }
